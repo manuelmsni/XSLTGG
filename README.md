@@ -21,4 +21,4 @@ Implementing XMLTGG is straightforward.
 
 ###   - Script (JavaScript)
     <!-- Place the following code in the HTML head -->
-    <link rel="stylesheet" href="https://manuelmsni.github.io/XSLTGG/assets/js/XSLTGG.js">
+    <script type="text/javascript" src="https://manuelmsni.github.io/XSLTGG/assets/js/XSLTGG.js"></script>
