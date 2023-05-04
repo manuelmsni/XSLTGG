@@ -12,7 +12,7 @@ function loadXMLDoc(filename){
     return xhttp.responseXML;
 }
 
-function returnResult(xmlPath, xsltPath){
+function getFragment(xmlPath, xsltPath){
     xml = loadXMLDoc(xmlPath);
     xsl = loadXMLDoc(xsltPath);
     // code for IE
@@ -30,6 +30,5 @@ function returnResult(xmlPath, xsltPath){
 }
 
 function XSLTGG(xmlPath, xsltPath, elementId){
-    result = returnResult(xmlPath, xsltPath);
-    document.getElementById(elementId).appendChild(result);
+    document.getElementById(elementId).appendChild(getFragment(xmlPath, xsltPath));
 }
