@@ -9,8 +9,10 @@ XSLTGG is a lightweight script that allows you to import data from XML and XSLT 
 ###   - Example of usage
     <!-- path.xml is the path of your XML document -->
     <!-- path.xls is the path of your XSLT document -->
-    <!-- fatherId is the id of the element of your HTML in which you want to include the "data" from your XML -->
-    <body onload="XMLTGG('path.xml', 'path.xsl', 'fatherId')>
+    <!-- father is the id of the element of your HTML in which you want to include the "data" from your XML -->
+    <body onload="XMLTGG('path.xml', 'path.xsl', 'father')>
+        <section id="father">
+        </section>
     </body>
 
 ## Easy set up XMLTGG:
