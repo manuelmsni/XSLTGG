@@ -29,7 +29,7 @@ function returnResult(xmlPath, xsltPath){
     }
 }
 
-function fetchData(xmlPath, xsltPath, elementId){
+function XSLTGG(xmlPath, xsltPath, elementId){
     result = returnResult(xmlPath, xsltPath);
     document.getElementById(elementId).appendChild(result);
 }
