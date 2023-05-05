@@ -75,7 +75,7 @@ function nodeSpider(root){
             console.log("TageName : ", nodes[i].tagName, ", Text : ", text);
             text = nodes[i].textContent;
         } else{
-            nodeSpider(nodes[i])
+            nodeSpider(nodes[i]);
         }//get text of the node
         console.log("TageName : ", nodes[i].tagName, ", Text : ", text);
     }
