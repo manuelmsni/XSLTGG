@@ -66,5 +66,3 @@ function showResult(xml, path, fatherId) {
     }
     document.getElementById(fatherId).innerHTML = txt;
 }
-    
-check_xpath(path);
