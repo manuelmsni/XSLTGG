@@ -63,6 +63,17 @@ function showResult(xml, path, fatherId) {
             txt += nodes[i].childNodes[0].nodeValue + "<br>";
         }*/
     }
-    console.log(nodes);
+    console.nodeSpider(nodes);
     //document.getElementById(fatherId).innerHTML = txt;
 }
+
+function nodeSpider(root){
+    var nodes = root.querySelectorAll("*");
+    for (var i = 0; i < nodes.length; i++) {
+        var text = null;
+        if (nodes[i].childNodes.length == 1 && nodes[i].childNodes[0].nodeType == 3) //if nodeType == text node
+            text = nodes[i].textContent; //get text of the node
+        console.log("TageName : ", nodes[i].tagName, ", Text : ", text);
+    }
+}
+
