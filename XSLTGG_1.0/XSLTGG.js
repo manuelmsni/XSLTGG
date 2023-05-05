@@ -49,20 +49,20 @@ function check_xpath(xmlPath, path, fatherId) {
 function showResult(xml, path, fatherId) {
     var txt = "";
     if (xml.evaluate) {
-        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);/*
         var result = nodes.iterateNext();
         while (result) {
             txt += result.childNodes[0].nodeValue + "<br>";
             result = nodes.iterateNext();
-        }
+        }*/
         // Code For Internet Explorer
     } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
         xml.setProperty("SelectionLanguage", "XPath");
-        nodes = xml.selectNodes(path);
+        nodes = xml.selectNodes(path);/*
         for (i = 0; i < nodes.length; i++) {
             txt += nodes[i].childNodes[0].nodeValue + "<br>";
-        }
+        }*/
     }
-    console.log(txt);
-    document.getElementById(fatherId).innerHTML = txt;
+    console.log(nodes);
+    //document.getElementById(fatherId).innerHTML = txt;
 }
