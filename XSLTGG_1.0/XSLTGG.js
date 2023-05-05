@@ -35,7 +35,7 @@ function XSLTGG(xmlPath, xsltPath, elementId){
 
 /* ------------------------------------ xPath ------------------------------------ */
 
-function check_xpath(xmlPath, path, fatherIdh) {
+function check_xpath(xmlPath, path, fatherId) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
