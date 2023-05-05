@@ -68,7 +68,7 @@ function showResult(xml, path, fatherId) {
 }
 
 function nodeSpider(root){
-    var nodes = root.querySelectorAll("*");
+    var nodes = root;
     for (var i = 0; i < nodes.length; i++) {
         var text = null;
         if (nodes[i].childNodes.length == 1 && nodes[i].childNodes[0].nodeType == 3){ //if nodeType == text node
