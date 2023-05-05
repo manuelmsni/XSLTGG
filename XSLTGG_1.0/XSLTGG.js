@@ -35,16 +35,15 @@ function XSLTGG(xmlPath, xsltPath, elementId){
 
 /* ------------------------------------ xPath ------------------------------------ */
 
-function check_xpath(xmlPath, path, fatherId) {
-    xml = loadXMLDoc(xmlPath);
-    //var xhttp = new XMLHttpRequest();
-    xml.onreadystatechange = function () {
+function check_xpath(xmlPath, path, fatherIdh) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            showResult(xml, path, fatherId);
+            showResult(xhttp.responseXML, path, fatherId);
         }
     };
-    xml.open("GET", file, true);
-    xml.send();
+    xhttp.open("GET", xmlPath, true);
+    xhttp.send();
 }
 
 function showResult(xml, path, fatherId) {
