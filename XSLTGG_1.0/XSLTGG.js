@@ -72,6 +72,7 @@ function nodeSpider(root){
     for (var i = 0; i < nodes.length; i++) {
         var text = null;
         if (nodes[i].childNodes.length == 1 && nodes[i].childNodes[0].nodeType == 3){ //if nodeType == text node
+            console.log("TageName : ", nodes[i].tagName, ", Text : ", text);
             text = nodes[i].textContent;
         } else{
             nodeSpider(nodes[i])
