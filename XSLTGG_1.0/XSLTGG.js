@@ -63,6 +63,6 @@ function showResult(xml, path, fatherId) {
             txt += nodes[i].childNodes[0].nodeValue + "<br>";
         }
     }
-    log(txt);
+    console.log(txt);
     document.getElementById(fatherId).innerHTML = txt;
 }
