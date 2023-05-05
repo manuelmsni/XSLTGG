@@ -15,6 +15,8 @@ XSLTGG is a lightweight script that allows you to import data from XML and XSLT 
         <section id="fatherId">
         </section>
     </body>
+    
+GG, easy! :)
 
 ## Easy set up XMLTGG:
 Implementing XMLTGG is straightforward.
