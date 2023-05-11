@@ -35,9 +35,9 @@ function XSLTGG(xmlPath, xsltPath, elementId){
     /*
     try{
         updateTriggersAfterXSLTGG();
-    } catch(){
+    } catch(){}*/
         
-    }*/
+    }
 
 /* ------------------------------------ xPath ------------------------------------ */
 
