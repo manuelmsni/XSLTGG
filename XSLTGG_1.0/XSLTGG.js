@@ -29,15 +29,21 @@ function getFragment(xmlPath, xsltPath){
     }
 }
 
-function XSLTGG(xmlPath, xsltPath, elementId){
+function XSLTGG(xmlPath, xsltPath, elementId, x){
     document.getElementById(elementId).appendChild(getFragment(xmlPath, xsltPath));
-    
-    /*
-    try{
-        updateTriggersAfterXSLTGG();
-    } catch(){}*/
-        
+    if(x !== undefined) {
+        try{
+            updateTriggersAfterXSLTGG();
+            console.log("actualizando triggers");
+        } catch(e){
+            if(e instanceof ReferenceError){
+                console.log("Los triggers no han sido actualizados!");
+            }
+        }
     }
+}
+
+
 
 /* ------------------------------------ xPath ------------------------------------ */
 
