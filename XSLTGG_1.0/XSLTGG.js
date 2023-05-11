@@ -1,3 +1,9 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * #XSLTGG                                             *
+ * @author manuelmsni <manuelmartinsantamaria.com>     *
+ * version 0.1 || https://github.com/manuelmsni/XSLTGG *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 function loadXMLDoc(filename){
     if (window.ActiveXObject){
         xhttp = new ActiveXObject("Msxml2.XMLHTTP");
