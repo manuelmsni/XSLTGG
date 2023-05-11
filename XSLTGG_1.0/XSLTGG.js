@@ -31,7 +31,13 @@ function getFragment(xmlPath, xsltPath){
 
 function XSLTGG(xmlPath, xsltPath, elementId){
     document.getElementById(elementId).appendChild(getFragment(xmlPath, xsltPath));
-}
+    updateTriggersAfterXSLTGG();
+    /*
+    try{
+        
+    } catch(){
+        
+    }*/
 
 /* ------------------------------------ xPath ------------------------------------ */
 
